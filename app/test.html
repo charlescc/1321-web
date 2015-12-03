@@ -4,16 +4,47 @@
 <meta charset="utf-8" />
 <title>宽度自适应布局</title>
 <style>
-body,div{ margin:0; padding:0;}
-div{ height:200px; color:#F00;}
-.left{ float:left; width:100px; background:#00f; }
-.right{ float:right; width:100px; background:#0f0; }
-.center{ background:#333; margin:0 100px; _margin:0 97px;}
+
+ .gradientDemo div {
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 20px auto;
+  }
+.beveled {
+   background: #c00; /* fallback */
+   background:
+     -moz-linear-gradient(45deg,  transparent 10px, #c00 10px),
+     -moz-linear-gradient(135deg, transparent 10px, #c00 10px),
+     -moz-linear-gradient(225deg, transparent 10px, #c00 10px),
+     -moz-linear-gradient(315deg, transparent 10px, #c00 10px);
+  background:
+      -o-linear-gradient(45deg,  transparent 10px, #c00 10px),
+      -o-linear-gradient(135deg, transparent 10px, #c00 10px),
+      -o-linear-gradient(225deg, transparent 10px, #c00 10px),
+       -o-linear-gradient(315deg, transparent 10px, #c00 10px);
+    background:
+        -webkit-linear-gradient(45deg,  transparent 10px, #c00 10px),
+        -webkit-linear-gradient(135deg, transparent 10px, #c00 10px),
+        -webkit-linear-gradient(225deg, transparent 10px, #c00 10px),
+        -webkit-linear-gradient(315deg, transparent 10px, #c00 10px);
+   }
+   .beveled,
+.round {
+          background-position: bottom left, bottom right, top right, top left;
+          -moz-background-size: 50% 50%;
+          -webkit-background-size: 50% 50%;
+          background-size: 50% 50%;
+          background-repeat: no-repeat;
+    }
 </style>
 </head>
 <body>
-<div class="left">我是left</div>
-<div class="right">我是right</div>
-<div class="center">我是center</div>
+<div class="gradientDemo" style="padding: 30px;">
+     
+  <div class="beveled">test Beveled</div>
+  
+</div>
 </body>
 </html>
