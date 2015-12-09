@@ -27,6 +27,15 @@ body,div{
 .left{
 	float: left;
 }
+.view-container{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+
+}
+#back-pink-center .view-container{
+	height: 100%;
+}
 .decorate{
 	background-position: center;
 	background-repeat: no-repeat;
@@ -765,7 +774,7 @@ body,div{
 	word-break:keep-all;
 	-o-text-overflow:ellipsis;
 	   text-overflow:ellipsis;
-	font-size: 0.5rem;
+	font-size: 0.7rem;
 
 }
 .item-alt{
