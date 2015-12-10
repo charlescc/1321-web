@@ -5,7 +5,7 @@
 	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 body{
-	min-width: 800px;
+	min-width: 1350px;
 }
 ul{
 	list-style: none;
@@ -48,15 +48,15 @@ body,div{
 #left-decorate{
 	background-image: url("../images/left-decorate.png");
 	float: left;
-	width: 100px;
+	width: 130px;
 }
 #right-decorate{
 	background-image: url("../images/right-decorate.png");
 	float: right;
-	width: 150px;
+	width: 200px;
 }
 #center-decorate{
-	margin: 0 150px 0 100px;
+	margin: 0 200px 0 130px;
 	height: 180px;
 
 }
@@ -88,6 +88,7 @@ body,div{
 }
 .section{
  	width:100%;
+ 	min-width: 1350px;
  	height:800px;
  	border: thin solid grey;
  	position: relative;
