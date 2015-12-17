@@ -132,6 +132,7 @@ body,div{
 	position: relative;
 	margin-left: 350px;
 	height: 545px;
+	overflow: hidden;
 }
 /*rbg(52,113,137)*/
 .adaption .back-earth{
